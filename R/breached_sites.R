@@ -15,7 +15,7 @@ breached_sites <- function(domain=NULL, verbose = TRUE, agent = NULL) {
     length(domain) != 1 | !inherits(domain, "character"))) {
     stop("Problematic domain")
   }
-  URLS <- "https://haveibeenpwned.com/api/breaches" # nolint
+  URLS <- "https://haveibeenpwned.com/api/v2/breaches" # nolint
   if (!is.null(domain)){
     URLS <- urltools::param_set(URLS, "domain", urltools::url_encode(domain)) # nolint
   }
