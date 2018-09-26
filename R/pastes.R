@@ -25,7 +25,7 @@ pastes <- function(
 
   encoded <- urltools::url_encode(emails)
   URLS <- paste0(# nolint
-    "https://haveibeenpwned.com/api/pasteaccount/"
+    "https://haveibeenpwned.com/api/v2/pasteaccount/"
     , encoded
   )
 
