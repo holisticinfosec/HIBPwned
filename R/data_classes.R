@@ -15,7 +15,7 @@
 #' @examples
 #' data_classes()
 data_classes <- function(verbose = TRUE, agent = NULL) {
-  URLS <- "https://haveibeenpwned.com/api/dataclasses" # nolint
+  URLS <- "https://haveibeenpwned.com/api/v2/dataclasses" # nolint
   res <- GETcontent(URLS, HIBP_headers(agent), verbose)# nolint
   return(res)
 }
