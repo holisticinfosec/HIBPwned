@@ -15,7 +15,7 @@ breached_site <- function(name, verbose = TRUE, agent = NULL) {
     stop("Problematic breach name")
   }
 
-  URLS <- "https://haveibeenpwned.com/api/breach/" # nolint
+  URLS <- "https://haveibeenpwned.com/api/v2/breach/" # nolint
   encoded <- urltools::url_encode(name)
   URLS <- paste0(URLS, encoded) # nolint
   res <- GETcontent(URLS, HIBP_headers(agent), verbose)# nolint
