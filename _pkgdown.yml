@@ -12,6 +12,8 @@ reference:
     - data_classes
     - breached_sites
     - breached_site
+  - title: Passwords
+    - pwned_passwords
   - title: Utils
     contents:
     - HIBP_headers
