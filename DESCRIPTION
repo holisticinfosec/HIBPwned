@@ -1,6 +1,6 @@
 Package: HIBPwned
 Title: Bindings for the 'HaveIBeenPwned.com' Data Breach API
-Version: 0.1.7
+Version: 0.1.8
 Authors@R: 
     c(person(given = "Steph",
              family = "Locke",
@@ -34,6 +34,7 @@ Imports:
     urltools,
     jsonlite,
     ratelimitr,
+    data.table,
     memoise
 RoxygenNote: 6.0.1.9000
 VignetteBuilder: knitr
